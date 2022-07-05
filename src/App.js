@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { ChildArea } from "./ChildeArea";
 import "./styles.css";
 
 export default function App() {
+  console.log("aaa");
   const [count, setCount] = useState(0);
   const onClickCountButton = () => {
     setCount(count + 1);
@@ -9,10 +11,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <p>{count}</p>
-      <button onClick={onClickCountButton}>count</button>
+      <input />
+      <button>表示</button>
+      <ChildArea />
     </div>
   );
 }
